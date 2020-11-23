@@ -155,10 +155,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="http_json_test.cpp" />
+    <ClCompile Include="http_data_loader.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="http_data_loader.h" />
     <ClInclude Include="include\json\json.hpp" />
+    <ClInclude Include="threadpool.h" />
+    <ClInclude Include="threadsafe_queue.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
