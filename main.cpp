@@ -9,8 +9,6 @@
 
 #include "include/json/json.hpp"
 #include "http_data_loader.h"
-#include "threadsafe_queue.h"
-#include "threadpool.h"
 #include "curl.h"
 
 using namespace std;
