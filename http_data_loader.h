@@ -12,11 +12,8 @@ class HttpDataLoader
 public:
     HttpDataLoader(const std::string& url);
     CURLcode fetch();
-    std::string get_fetched_data() const {
+    std::string getData() const {
         return m_data;
-    }
-    std::string get_url() const {
-        return m_url;
     }
 
 private:
@@ -26,7 +23,7 @@ private:
     };
 
     typedef std::unique_ptr<CURL, std::function<void(CURL*)>> CURL_ptr;
-    CURL_ptr m_curl_ptr;
+    CURL_ptr m_curlPtr;
     std::string m_data;
     std::string m_url;
 };
